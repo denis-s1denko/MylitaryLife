@@ -1,0 +1,206 @@
+html {
+	scroll-behavior: smooth;
+}
+
+
+body {
+	margin: 0;
+	font-family: 'Farro', sans-serif;
+
+	font-size: 14px;
+	line-height: 1.6;
+	color: #666666;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+@keyframes anim {
+	0% {
+		bottom: 30px;
+		opacity: 1;
+	}
+	100% {
+		bottom: 0px;
+		opacity: 0;
+	}
+}
+
+
+/* CONTAINER */
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* HEADER */
+.header {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: #323233;
+
+}
+.header-in {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-logo {
+	display: inline-block;
+	vertical-align: top;
+	
+	padding: 1px 15px;
+
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+
+	text-transform: uppercase;
+	text-decoration: none;
+
+	
+
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.header-logo:hover {
+	background-color: #191919;
+}
+
+
+/* INTRO */
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	width: 100%;
+	height: 100vh;
+
+	background: url("../img/2YCFQM.jpg") center no-repeat;
+	-webkit background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.intro-in {
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro-phrase {
+	position: relative;
+
+	font-size: 50px;
+	font-weight: 700;
+
+	text-transform: uppercase;
+	text-align: center;
+
+	line-height: 1;
+	color: white;
+}
+
+
+/* BTN */
+.btn {
+	display: inline-block;
+	vertical-align: top;
+
+	position: relative;
+	size: 12px;
+
+
+	animation: anim 2s infinite;
+}
+
+
+
+/* LINKS */
+nav {
+	font-family: 'Farro', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.nav-link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+	position: relative; 
+
+	color: gray;
+	text-decoration: none;
+
+	transition: color 0.1s linear;
+}
+.nav-link:after {
+	content: "";
+	width: 100%;
+	height: 3px;
+
+	opacity: 0;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+.nav-link:hover {
+	color: white;
+}
+
+
+.nav-link:hover:after {
+	opacity: 1;
+}
+
+
+/* SECTION */
+section {
+	height: 100vh;
+	width: 100%;
+}
+
+#sec-1 {
+	background: url("../img/fsdfsf.jpg") center no-repeat;
+	-webkit background-size: cover;
+	background-size: cover;
+	background-attachment: fixed; 
+}
+
+.sec1-in {
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.sec1-idea {
+	font-size: 50px;
+}
+.sec1-phrase {
+	font-size: 30px;
+}
